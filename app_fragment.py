@@ -19,7 +19,7 @@ def index():
     return render_template("index.html", text=text)
 
 
-@app.route('/flaga)
+@app.route('/flaga')
 
 def flaga():
 	create_folders()  
