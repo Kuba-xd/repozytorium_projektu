@@ -10,6 +10,7 @@ import wikipedia as wiki
 from lxml import html
 
 app=Flask(__name__)
+app.config['UPLOAD_FOLDER'] = 'static'
 
 # Main 
 @app.route('/') 
@@ -18,7 +19,7 @@ def index():
     return render_template("index.html", text=text)
 
 
-@app.route('/flaga', methods=["GET", "POST"])
+@app.route('/flaga)
 
 def flaga():
 	create_folders()  
